@@ -1,0 +1,4 @@
+c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.AssemblyInfoInputs.cache
+c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.AssemblyInfo.cs
+c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.csproj.CoreCompileInputs.cache
