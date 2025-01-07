@@ -1,7 +1,7 @@
 // Complejidad cuadrática O(n^2)
 using System;
 
-class Program
+class CuadraticExample
 {
   static void Exec()
   {
