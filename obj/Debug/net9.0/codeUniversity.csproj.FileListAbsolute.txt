@@ -2,3 +2,14 @@ c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.Gener
 c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.AssemblyInfoInputs.cache
 c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.AssemblyInfo.cs
 c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.csproj.CoreCompileInputs.cache
+c:\Users\braia\source\repos\codeUniversity\bin\Debug\net9.0\codeUniversity.exe
+C:\Users\braia\source\repos\codeUniversity\bin\Debug\net9.0\codeUniversity.deps.json
+C:\Users\braia\source\repos\codeUniversity\bin\Debug\net9.0\codeUniversity.runtimeconfig.json
+c:\Users\braia\source\repos\codeUniversity\bin\Debug\net9.0\codeUniversity.dll
+c:\Users\braia\source\repos\codeUniversity\bin\Debug\net9.0\codeUniversity.pdb
+c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.sourcelink.json
+c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.dll
+c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\refint\codeUniversity.dll
+c:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.pdb
+C:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\codeUniversity.genruntimeconfig.cache
+C:\Users\braia\source\repos\codeUniversity\obj\Debug\net9.0\ref\codeUniversity.dll

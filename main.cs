@@ -1,12 +1,9 @@
 using System;
 
-namespace CodeUniversity
+class Programa
 {
-  class Program
+  static void Main(string[] args)
   {
-    static void Main(string[] args)
-    {
-      Console.WriteLine("Hello, World!");
-    }
+    Singleton.Instance.Print();
   }
 }
