@@ -1,95 +1,99 @@
 using System;
 using System.Collections.Generic;
 
-// Interfaz Command
-public interface ICommand
+namespace Command
 {
-  void Execute();
-}
 
-// Comando Concreto
-public class LightOnCommand : ICommand
-{
-  private Light _light;
-
-  public LightOnCommand(Light light)
+  // Interfaz Command
+  public interface ICommand
   {
-    _light = light;
+    void Execute();
   }
 
-  public void Execute()
+  // Comando Concreto
+  public class LightOnCommand : ICommand
   {
-    _light.On();
-  }
-}
+    private Light _light;
 
-// Comando Concreto
-public class LightOffCommand : ICommand
-{
-  private Light _light;
+    public LightOnCommand(Light light)
+    {
+      _light = light;
+    }
 
-  public LightOffCommand(Light light)
-  {
-    _light = light;
-  }
-
-  public void Execute()
-  {
-    _light.Off();
-  }
-}
-
-// Receptor
-public class Light
-{
-  public void On()
-  {
-    Console.WriteLine("La luz está encendida");
+    public void Execute()
+    {
+      _light.On();
+    }
   }
 
-  public void Off()
+  // Comando Concreto
+  public class LightOffCommand : ICommand
   {
-    Console.WriteLine("La luz está apagada");
+    private Light _light;
+
+    public LightOffCommand(Light light)
+    {
+      _light = light;
+    }
+
+    public void Execute()
+    {
+      _light.Off();
+    }
   }
-}
 
-// Invocador
-public class RemoteControl
-{
-  private ICommand _command;
-
-  public void SetCommand(ICommand command)
+  // Receptor
+  public class Light
   {
-    _command = command;
+    public void On()
+    {
+      Console.WriteLine("La luz está encendida");
+    }
+
+    public void Off()
+    {
+      Console.WriteLine("La luz está apagada");
+    }
   }
 
-  public void PressButton()
+  // Invocador
+  public class RemoteControl
   {
-    _command.Execute();
+    private ICommand _command;
+
+    public void SetCommand(ICommand command)
+    {
+      _command = command;
+    }
+
+    public void PressButton()
+    {
+      _command.Execute();
+    }
   }
-}
 
-// Cliente
-public class Program
-{
-  public static void Main(string[] args)
+  // Cliente
+  public class Program
   {
-    // Receptor
-    Light livingRoomLight = new Light();
+    public static void Main(string[] args)
+    {
+      // Receptor
+      Light livingRoomLight = new Light();
 
-    // Comandos Concretos
-    ICommand lightOn = new LightOnCommand(livingRoomLight);
-    ICommand lightOff = new LightOffCommand(livingRoomLight);
+      // Comandos Concretos
+      ICommand lightOn = new LightOnCommand(livingRoomLight);
+      ICommand lightOff = new LightOffCommand(livingRoomLight);
 
-    // Invocador
-    RemoteControl remote = new RemoteControl();
+      // Invocador
+      RemoteControl remote = new RemoteControl();
 
-    // Encender la luz
-    remote.SetCommand(lightOn);
-    remote.PressButton();
+      // Encender la luz
+      remote.SetCommand(lightOn);
+      remote.PressButton();
 
-    // Apagar la luz
-    remote.SetCommand(lightOff);
-    remote.PressButton();
+      // Apagar la luz
+      remote.SetCommand(lightOff);
+      remote.PressButton();
+    }
   }
 }
